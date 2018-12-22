@@ -1,0 +1,28 @@
+SRCS := $(SRCS) \
+	$(SUBDIR)dospack.c \
+	$(SUBDIR)int_callback.c \
+	$(SUBDIR)logging.c \
+	$(SUBDIR)cpu.c \
+	$(SUBDIR)cpu_disasm.c \
+	$(SUBDIR)timetrack.c \
+	$(SUBDIR)memory.c \
+	$(SUBDIR)files.c \
+	$(SUBDIR)io.c \
+	$(SUBDIR)paging.c \
+	$(SUBDIR)pic.c \
+	$(SUBDIR)dosblock.c \
+	$(SUBDIR)cpu_decode.c \
+	$(SUBDIR)marshal.c \
+	$(SUBDIR)bios.c \
+	$(SUBDIR)video.c \
+	$(SUBDIR)keyboard.c \
+	$(SUBDIR)hwtimer.c \
+	$(SUBDIR)events.c \
+
+ifeq ($(DISPLAY_HEAD),gl)
+SRCS += $(SUBDIR)video_gl.c
+endif
+
+ifeq ($(DISPLAY_HEAD),null)
+SRCS += $(SUBDIR)video_null.c
+endif

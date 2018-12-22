@@ -1,0 +1,2 @@
+SRCS := $(SRCS) \
+	$(SUBDIR)ui.c \

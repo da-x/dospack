@@ -3,6 +3,6 @@
 
 #include "../../core/games.h"
 
-struct dp_game dp_game_dave;
+extern struct dp_game dp_game_dave;
 
 #endif

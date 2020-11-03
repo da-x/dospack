@@ -1,4 +1,4 @@
 SRCS := $(SRCS) $(SUBDIR)dave.c
 
 $(SUBDIR)dave_exe.cdata: $(SUBDIR)DAVE.EXE
-	python tools/cdata.py $< $@
+	python2 tools/cdata.py $< $@
